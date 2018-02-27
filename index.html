@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>GifTastic Gifs</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+	 crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r"
+	 crossorigin="anonymous">
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>Celebrity Meet and Greet</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div id="celebrityButtons"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md 12">
+				<form id="celebrity-form">
+						<label for="celeb-input">Search for a Celebrity</label>
+						<input type="text" id="newCelebrity">
+						<br>
+			
+						<!-- This button will trigger our AJAX call -->
+						<input id="add-celeb" type="submit" value="celebrity Search">
+
+				</form>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div id="celebrity-view"></div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script src="javascript.js"></script>
+</body>
+
+</html>
