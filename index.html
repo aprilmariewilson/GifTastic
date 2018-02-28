@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r"
 	 crossorigin="anonymous">
 	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	 <link rel="stylesheet" href="assets\game.css">
 
 </head>
 
@@ -25,23 +26,27 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-md-12 buttons" >
 				<div id="celebrityButtons"></div>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md 12">
+			<div class= "col-md-8 col-sm-12">
+				<p> Click the buttons above to see pics of the listed celebrities.</p><br>
+				<p>If you want to see your favorite celebrities, complete a search and add them to the list.</p>
+			</div>
+			<div class="col-md-4 col-sm-12 input">
 				<form id="celebrity-form">
 						<label for="celeb-input">Search for a Celebrity</label>
 						<input type="text" id="newCelebrity">
 						<br>
 			
-						<!-- This button will trigger our AJAX call -->
 						<input id="add-celeb" type="submit" value="celebrity Search">
 
 				</form>
 			</div>
 		</div>
+		
 		<div class="row">
 			<div class="col-md-12">
 				<div id="celebrity-view"></div>

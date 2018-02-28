@@ -1,0 +1,19 @@
+h1{
+	text-align: center;
+
+}
+.buttons {
+	padding: 1px;
+	color: black;
+	text-align: center;
+	border-spacing: 2px;
+}
+
+.imput{
+	padding: 2px;
+	margin: 2px;
+}
+.row{
+	padding-bottom: 2%;
+
+}
