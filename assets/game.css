@@ -1,19 +1,63 @@
-h1{
+.heading{
 	text-align: center;
-
+	margin: 0;
+	padding:0;
+	padding: 0;
+	background-image: url("https://thumbs.dreamstime.com/b/gold-star-confetti-background-stars-falling-frame-transparent-golden-abstract-pattern-christmas-new-year-holiday-celebration-96064247.jpg");
+border: none;
 }
+
 .buttons {
-	padding: 1px;
-	color: black;
+	margin-top: 10px;
+	padding: 2px;
 	text-align: center;
 	border-spacing: 2px;
+
+}
+.space{
+	border-top: 4px solid gold;
+	border-bottom: 4px solid gold;
+	background-color: black;
+}
+.paragraph{
+border: black solid 4px;
+color: whitesmoke;
+margin-right: 1%;
+margin-left: 1%;
+background: black;
+font-family: 'Mirza', cursive;
+font-size: 30px;
+line-height: 1.5;
+}
+.hollywood{
+	height:200px;
+	width: 1000px;
 }
 
-.imput{
-	padding: 2px;
-	margin: 2px;
+.input{
+	padding: 1%;
+	padding-bottom: 40px;
+	margin-left: 1%;
+	border: gold solid 2px;
+	position: relative;
+	background-color: white;
+}
+#add-celeb{
+	position: absolute;
+	top: 45px;
+	right: 15px;
 }
 .row{
 	padding-bottom: 2%;
 
+}
+img{
+	border: black solid 2px;
+	margin: auto;
+
+}
+
+.container{
+	border: black solid 8px;
+	background-image: url("https://tse4.mm.bing.net/th?id=OIP.tyfkNem3_VYLFL0zJp53twHaEo&pid=15.1&P=0&w=295&h=185");
 }

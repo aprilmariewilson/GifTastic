@@ -9,10 +9,11 @@
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
 	 crossorigin="anonymous">
-
+	 <link href="https://fonts.googleapis.com/css?family=Mirza" rel="stylesheet">
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r"
 	 crossorigin="anonymous">
+	 
 	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	 <link rel="stylesheet" href="assets\game.css">
 
@@ -20,20 +21,32 @@
 
 <body>
 	<div class="container">
-		<div class="row">
+		<div class="row heading">
 			<div class="col-md-12">
-				<h1>Celebrity Meet and Greet</h1>
+				<img src="assets/hollywood.png" alt="Hollywood walk of fame" class= "heading" srcset="http://www.digitaldeliftp.com/DigitalDeliToo/Images/Hollywood-Star-Time-head.png">
 			</div>
 		</div>
-		<div class="row">
+		<div class= "row space">
+			<div class="col-md-12 col-sm-0">
+				<br>
+				<br>
+			</div>
+		</div>
+		<div class="row buttons">
 			<div class="col-md-12 buttons" >
 				<div id="celebrityButtons"></div>
 			</div>
 		</div>
-		<div class="row">
-			<div class= "col-md-8 col-sm-12">
-				<p> Click the buttons above to see pics of the listed celebrities.</p><br>
-				<p>If you want to see your favorite celebrities, complete a search and add them to the list.</p>
+		
+		<div class="row info">
+			<div class= "col-md-7 col-sm-12 paragraph">
+				<h5> Click the buttons above to see pics of the listed celebrities.</h5>
+				<h5>If you want to see your favorite celebrities, complete a search and add them to the list.</h5>
+				
+				<h5>Click on a picture and watch what happens</h5>
+			</div>
+			<div class="col-md-1 col-sm-0 break">
+
 			</div>
 			<div class="col-md-4 col-sm-12 input">
 				<form id="celebrity-form">
@@ -47,7 +60,7 @@
 			</div>
 		</div>
 		
-		<div class="row">
+		<div class="row pics">
 			<div class="col-md-12">
 				<div id="celebrity-view"></div>
 			</div>

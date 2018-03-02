@@ -1,10 +1,9 @@
 var topics = ["John Wayne", "Marilyn Monroe", "Danny DeVito", "Chuck Norris", "Jennifer Lawrence", "Betty White", "Christopher Walken"];
 var addButton;
 var celebrity;
-var currentCeleb;
 var celebButtons = $('#celebrityButtons');
 var view = $('#celebrity-view');
-var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + currentCeleb + "&api_key=lz2q06u2dqQH3ledvz5cxyty0LvjlaKA&limit=10";
+
 var celebrity = $("#newCelebrity").val();
 var state = $(this).attr("data-state");
 $(document).ready(function () {
@@ -12,10 +11,13 @@ $(document).ready(function () {
 	function renderButtons() {
 		celebButtons.empty();
 
+
 		for (var i = 0; i < topics.length; i++) {
 			addButton = $("<button>");
-			addButton.addClass('celebrity');
+			addButton.addClass("celebrity-button")
 			addButton.attr('data-name', topics[i]);
+			addButton.removeClass('btn-success').addClass('btn-primary');
+			$(this).addClass('btn-fancy').removeClass('btn-primary');
 			addButton.text(topics[i]);
 			celebButtons.append(addButton);
 
@@ -34,10 +36,13 @@ $(document).ready(function () {
 
 	// call api to page
 	function getGifs(){
-		celebButtons.on('click', function () {
+		$(document).on('click',".celebrity-button", function (e) {
 		$('#celebrity-view').empty;
-			currentCeleb = $(this).attr('data-value');
+			var currentCeleb = $(this).attr('data-name');
+			console.log(e);
+			console.log(this)
 			console.log(currentCeleb);
+			var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + currentCeleb + "&api_key=lz2q06u2dqQH3ledvz5cxyty0LvjlaKA&limit=10";
 
 			$.ajax({
 				url: queryURL,
@@ -62,13 +67,16 @@ $(document).ready(function () {
 						.attr("src", srcStill);
 
 					
-					view.append(p);
+					
 					view.append(img);
+					view.append(p);
+
 					
 				}
 			});
 		});
 	}
+
 
 
 	// create animate function
