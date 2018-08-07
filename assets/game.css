@@ -14,6 +14,14 @@ border: none;
 	border-spacing: 2px;
 
 }
+.btn-primary{
+	background-color: black;
+}
+.celebrity-button{
+	background-color: black;
+	margin: 1%;
+	color: gold;
+}
 .space{
 	border-top: 4px solid gold;
 	border-bottom: 4px solid gold;
@@ -26,7 +34,7 @@ margin-right: 1%;
 margin-left: 1%;
 background: black;
 font-family: 'Mirza', cursive;
-font-size: 30px;
+font-size: 22px;
 line-height: 1.5;
 }
 .hollywood{

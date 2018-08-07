@@ -37,7 +37,7 @@ $(document).ready(function () {
 	// call api to page
 	function getGifs(){
 		$(document).on('click',".celebrity-button", function (e) {
-		$('#celebrity-view').empty;
+		$('#celebrity-view').empty();
 			var currentCeleb = $(this).attr('data-name');
 			console.log(e);
 			console.log(this)
