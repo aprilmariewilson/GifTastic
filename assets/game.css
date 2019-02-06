@@ -7,20 +7,23 @@
 border: none;
 }
 
-.buttons {
+.buttons #add-celeb{
 	margin-top: 10px;
 	padding: 2px;
 	text-align: center;
 	border-spacing: 2px;
 
 }
-.btn-primary{
+.btn-primary, #add-celeb,{
 	background-color: black;
+	background-image: linear-gradient(to bottom, gold 0,rgba(255, 217, 0, 0.537) 80%);
+
 }
-.celebrity-button{
+.celebrity-button, #add-celeb{
 	background-color: black;
 	margin: 1%;
-	color: gold;
+	color: whitesmoke;
+	text-emphasis: outline;
 }
 .space{
 	border-top: 4px solid gold;
