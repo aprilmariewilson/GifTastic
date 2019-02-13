@@ -14,7 +14,7 @@ border: none;
 	border-spacing: 2px;
 
 }
-.btn-primary, #add-celeb,{
+.btn-primary, #add-celeb {
 	background-color: black;
 	background-image: linear-gradient(to bottom, gold 0,rgba(255, 217, 0, 0.537) 80%);
 
